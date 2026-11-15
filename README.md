@@ -1,9 +1,5 @@
 # Transformer Health Monitoring AI Agent
 
-Student: Zain Iftikhar (2023F-mulbscelectricaleng-001), Minhaj University Lahore.
-Course: COMP232 Artificial Intelligence — teacher Muhammad Kamran.
-Due: 20 November 2026. Individual assignment, 20 marks.
-
 ## What is here
 
 | File | Task | What it does |
