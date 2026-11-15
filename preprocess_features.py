@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Task 1 (cleaning / normalisation / split) and Task 2 (feature engineering).
+Data cleaning, normalisation, splitting and feature engineering.
 Standard library only.
 
 Pipeline
@@ -182,7 +182,7 @@ def main():
             lo, hi = scaler[c]
             r[c + "_norm"] = (r[c] - lo) / (hi - lo) if hi > lo else 0.0
 
-    # --- Task 2: features (rolling windows look backwards only). ---
+    # --- Features (rolling windows look backwards only). ---
     load = [r["load_pct"] for r in rows]
     temp = [r["oil_temp_c"] for r in rows]
     curr = [r["current_a"] for r in rows]

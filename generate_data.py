@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Task 1 - Data generation (COMP232 Assignment 1).
+Data generation for the transformer health monitoring agent.
 Simulates one-minute telemetry for a 250 kVA, 11 kV / 0.4 kV distribution
 transformer (unit T-114) over 7.5 days: 10,800 records.
 
@@ -14,7 +14,7 @@ The data are synthetic, generated with the random module (seed 42, so every
 run reproduces the same file). Fault regimes are inserted as blocks so the
 labels are known exactly. Missing values (~2%), Gaussian noise and a small
 number of spikes are injected deliberately, and are then handled in
-preprocess_features.py - they are part of the assignment, not accidents.
+preprocess_features.py - they are part of the design, not accidents.
 
 Usage:  python3 generate_data.py            (writes transformer_data.csv)
 """

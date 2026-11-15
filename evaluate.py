@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Task 4 - Evaluation (COMP232 Assignment 1). Standard library only.
+Evaluation of the agent and classifier. Standard library only.
 
 1. Loads features.csv, runs predict_fault() from agent.py over the
    time-aware TEST split (the last 15% of records, never seen in

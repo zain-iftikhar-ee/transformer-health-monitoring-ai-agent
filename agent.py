@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Task 3 + Task 4 - Agent prototype (COMP232 Assignment 1).
+Agent prototype for the transformer health monitoring system.
 Standard library only. No real LLM call is made and no API key is needed:
 `LocalLLMStub` is CLEARLY labelled as a stub - it formats the same
 structured reasoning an LLM would be asked to produce, from the features
@@ -155,7 +155,7 @@ def get_maintenance_history(transformer_id):
     return MAINTENANCE_HISTORY.get(transformer_id, [])
 
 
-# ------------------------------------------------------- LLM stub (Task 4)
+# ------------------------------------------------------- LLM stub
 class LocalLLMStub:
     """STUB - stands in for a real LLM API call (no key, no network).
 
