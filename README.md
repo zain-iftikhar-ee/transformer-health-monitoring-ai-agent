@@ -1,4 +1,4 @@
-# COMP232 Assignment 1 — Transformer Health Monitoring AI Agent: code
+# Transformer Health Monitoring AI Agent
 
 Student: Zain Iftikhar (2023F-mulbscelectricaleng-001), Minhaj University Lahore.
 Course: COMP232 Artificial Intelligence — teacher Muhammad Kamran.
