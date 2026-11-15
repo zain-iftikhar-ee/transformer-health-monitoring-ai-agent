@@ -2,12 +2,12 @@
 
 ## What is here
 
-| File | Task | What it does |
-|---|---|---|
-| `generate_data.py` | 1 | Simulates 10,800 one-minute records (7 variables + label) and writes `transformer_data.csv`. |
-| `preprocess_features.py` | 1, 2 | Cleans the data (missing values, outliers, noise), normalises it, makes the time-aware train/validation/test split, engineers 7 features and selects features by correlation. Writes `features.csv`. |
-| `agent.py` | 3, 4 | The agent prototype: tools `get_sensor_data()`, `predict_fault()`, `get_maintenance_history()`, a clearly labelled local LLM stub (no API key, no network), the orchestrator and the guardrails, with a Thought–Action–Observation loop. |
-| `evaluate.py` | 4 | Runs the classifier on the held-out test split and the full agent on five scenarios, and prints accuracy, precision, recall and response-quality scores. |
+| File | What it does |
+|---|---|
+| `generate_data.py` | Simulates 10,800 one-minute records (7 variables + label) and writes `transformer_data.csv`. |
+| `preprocess_features.py` | Cleans the data (missing values, outliers, noise), normalises it, makes the time-aware train/validation/test split, engineers 7 features and selects features by correlation. Writes `features.csv`. |
+| `agent.py` | The agent prototype: tools `get_sensor_data()`, `predict_fault()`, `get_maintenance_history()`, a clearly labelled local LLM stub (no API key, no network), the orchestrator and the guardrails, with a Thought–Action–Observation loop. |
+| `evaluate.py` | Runs the classifier on the held-out test split and the full agent on five scenarios, and prints accuracy, precision, recall and response-quality scores. |
 
 ## Requirements
 
@@ -39,4 +39,4 @@ Other scenarios for the demo: `normal`, `overload`, `cooling_failure`,
   JSON reply shape) for a live deployment.
 - The agent never switches equipment by itself: any switching action is
   only proposed, and the guardrail layer records that human operator
-  approval is required first (see Task 5 in the report).
+  approval is required first (see the report).
